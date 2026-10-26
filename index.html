@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter Photography</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+        }
+
+        .first {
+            width: 82%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .second,
+        .third,
+        .fourth,
+        .fifth {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .second img,
+        .third img,
+        .fourth img,
+        .fifth img {
+            display: block;
+            object-fit: cover;
+        }
+
+        #A {
+            width: 65%;
+            height: 300px;
+        }
+
+        #B {
+            width: 35%;
+            height: 300px;
+        }
+
+        #C,
+        #D,
+        #E {
+            width: calc((100% - 20px) / 3);
+            height: 300px;
+        }
+
+        #F {
+            width: 40%;
+            height: 300px;
+        }
+
+        #G {
+            width: 60%;
+            height: 300px;
+        }
+
+        #H,
+        #I,
+        #J {
+            width: calc((100% - 20px) / 3);
+            height: 300px;
+        }
+
+        .right {
+            width: 18%;
+            min-height: 100vh;
+            background-color: #111;
+            color: white;
+            padding: 35px 15px;
+            text-align: center;
+
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .right h2 {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .navbar a:first-child {
+            color: #ff5733;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 45px;
+            font-size: 13px;
+        }
+
+        .social i {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="first">
+
+            <div class="second">
+                <img id="A" src="img_4.avif">
+                <img id="B" src="img_5.avif">
+            </div>
+
+            <div class="third">
+                <img id="C" src="img_1.avif">
+                <img id="D" src="img_2.avif">
+                <img id="E" src="img_3.avif">
+            </div>
+
+            <div class="fourth">
+                <img id="F" src="img_6.avif">
+                <img id="G" src="img_7.avif">
+            </div>
+
+            <div class="fifth">
+                <img id="H" src="img_8.avif">
+                <img id="I" src="img_9.avif">
+                <img id="J" src="img_10.avif">
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <h2>SHUTTER</h2>
+
+            <div class="navbar">
+                <a href="#">HOME</a>
+                <a href="#">PHOTOS</a>
+                <a href="#">BIO</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
